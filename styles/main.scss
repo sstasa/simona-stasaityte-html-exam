@@ -256,3 +256,52 @@ header{
 }
 
 /*FOOTER*/
+.footer{
+  margin-bottom: 105px;
+}
+.footer-section1{
+  margin-top: 64px;
+  .section-subtitle{
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+.footerIcon{
+  font-size: 18px;
+  margin-right: 16px;
+  color: v.$dark4;
+}
+
+
+.footer-section2{
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+
+.footer-section2-list{
+  display: flex;
+  flex-direction: column;
+  color: v.$dark2;
+
+  h3{
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-section3{
+  margin-top: 54px;
+  color: v.$dark4;
+  font-size: 20px;
+}
