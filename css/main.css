@@ -22,8 +22,6 @@ body {
 /*Bendri stiliai*/
 body {
   font-family: "Inter", sans-serif;
-  /*TEMPORARY*/
-  margin-bottom: 800px;
 }
 
 a {
@@ -255,4 +253,6 @@ header {
 .signupImg {
   height: 467px;
   align-self: flex-end;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*FOOTER*//*# sourceMappingURL=main.css.map */
