@@ -11,6 +11,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  margin-bottom: 0;
   display: inline-block;
 }
 
@@ -21,6 +22,8 @@ body {
 /*Bendri stiliai*/
 body {
   font-family: "Inter", sans-serif;
+  /*TEMPORARY*/
+  margin-bottom: 800px;
 }
 
 .container {
@@ -53,13 +56,19 @@ body {
   margin: 0;
 }
 
-.section-title {
+.section-title, .section-title-light {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
   margin-top: 24px;
   margin-bottom: 24px;
   color: #111111;
+}
+
+.section-title-light {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
 }
 
 .section-subtitle {
@@ -119,15 +128,13 @@ header {
   z-index: -1;
 }
 
+/*UPSELL*/
 .upsell {
   background-image: linear-gradient(to right, #FF3939, #FF8139);
   height: 326px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.upsell .section-title {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
+.upsell .section-title, .upsell .section-title-light {
   margin-top: 122px;
   margin-bottom: 16px;
 }
@@ -135,6 +142,7 @@ header {
   color: #111111;
 }
 
+/*PRESS*/
 .press {
   margin-top: 64px;
 }
@@ -148,4 +156,54 @@ header {
 .pressImg {
   max-width: 100%;
   align-self: stretch;
+}
+
+/*AUCTION*/
+.auction .section-title-light {
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+.auction .section-subtitle {
+  margin-bottom: 40px;
+}
+
+.auction-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.auction-item-details {
+  background-color: #EEEEEE;
+  border-radius: 0px 0px 16px 16px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.topbid, .nft-price, .auction-time {
+  justify-self: end;
+}
+
+.gloop, .topbid {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #FF8139;
+  margin-bottom: 12px;
+}
+
+.topbid {
+  color: #777777;
+}
+
+.nft-name, .nft-price {
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.nft-id, .auction-time {
+  color: #777777;
+  font-size: 18px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
