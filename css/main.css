@@ -56,7 +56,7 @@ a {
   color: #FF3998;
   text-transform: uppercase;
   font-weight: 700;
-  size: 16px;
+  font-size: 16px;
   line-height: 19px;
   margin: 0;
 }
@@ -93,6 +93,11 @@ a {
   padding: 22px 56px;
   border-radius: 50px;
   border: 4px solid #FF3998;
+}
+
+.hr {
+  height: 2px;
+  background-color: #EEEEEE;
 }
 
 /*HEADER*/
@@ -222,4 +227,32 @@ header {
   color: #777777;
   font-size: 18px;
   font-weight: 400;
+}
+
+/*SIGNUP*/
+.signup {
+  margin-top: 92px;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  overflow: hidden;
+  width: 455px;
+  height: 630px;
+}
+.signup-container .accent-title {
+  margin-top: 64px;
+}
+.signup-container .section-title, .signup-container .section-title-light {
+  margin-top: 24px;
+}
+.signup-container .btn {
+  margin-bottom: 66px;
+}
+
+.signupImg {
+  height: 467px;
+  align-self: flex-end;
 }/*# sourceMappingURL=main.css.map */
