@@ -1,3 +1,96 @@
+@use 'vars' as v;
+@use 'reset';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/*Bendri stiliai*/
 body{
   font-family: 'Inter', sans-serif;
+}
+
+.container{
+  padding: 32px 32px 0px;
+}
+.padRight0{
+  padding-right: 0;
+}
+.grid{
+  display: grid;
+}
+.relative{
+  position: relative;
+}
+
+.accent-title{
+  color: v.$accent;
+  text-transform: uppercase;
+  font-weight: 700;
+  size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.section-title{
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: v.$dark1;
+}
+
+.section-subtitle{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  color: v.$dark2;
+}
+
+.btn{
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  color: v.$dark1;
+  background-color: transparent;
+  padding: 22px 56px;
+  border-radius: 50px;
+  border: 4px solid v.$accent;
+}
+
+
+
+
+header{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: v.$light1;
+  .burger{
+    color: v.$dark4;
+    font-size: 30px;
+  }
+}
+
+/*HERO*/
+.hero{
+  padding-top: 144px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.hero-text{
+  width: 274px;
+}
+.heroImg{
+  position: absolute;
+  width: 430px;
+  top:-65px;
+  right: -205px;
+  z-index: -1;
 }
