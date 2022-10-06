@@ -94,3 +94,24 @@ header{
   right: -205px;
   z-index: -1;
 }
+
+.upsell{
+  background-image: linear-gradient(to right, v.$red, v.$orange);
+  height: 326px;
+
+  .container{
+    padding-top: 0;
+  }
+  
+  .section-title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 122px;
+    margin-bottom: 16px;
+  }
+
+  .section-subtitle{
+    color: v.$dark1;
+  }
+}

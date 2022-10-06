@@ -110,4 +110,22 @@ header {
   top: -65px;
   right: -205px;
   z-index: -1;
+}
+
+.upsell {
+  background-image: linear-gradient(to right, #FF3939, #FF8139);
+  height: 326px;
+}
+.upsell .container {
+  padding-top: 0;
+}
+.upsell .section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 122px;
+  margin-bottom: 16px;
+}
+.upsell .section-subtitle {
+  color: #111111;
 }/*# sourceMappingURL=main.css.map */
