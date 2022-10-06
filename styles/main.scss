@@ -102,10 +102,6 @@ header{
   }
 }
 
-.header-nav{
-  display: none;
-
-}
 .navItem{
   color: v.$dark2;
   font-size: 20px;
@@ -333,6 +329,7 @@ header{
   .container{
     margin-left: 80px;
     margin-right: 80px;
+    padding: 0;
   }
 
   .burger{
@@ -340,24 +337,67 @@ header{
   }
 
   .header{
-    padding: 70px 80px 20px;
+    padding: 70px 0px 20px;
   }
-  .header-nav{
+  .hiddenMobile{
     display: inline-block;
   }
 
   .hero{
     display: flex;
+    padding-top: 180px;
+    padding-bottom: 0px;
   }
   .hero-text{
     width: 45%;
     .section-title{
       font-size: 96px;
       line-height: 116px;
+      margin-bottom: 32px;
+    }
+    .btn{
+      margin-top: 41px;
+      margin-bottom: 200px;
+    }
+  }
+  .heroImg{
+    width: auto;
+    margin-right: 195px;
+  }
+  
+  .upsell{
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 16px;
+
+    .container{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .section-title-light{
+      margin: 0;
+      padding-left: 64px;
+      padding-top: 154px;
+      padding-bottom: 24px;
+    }
+
+    .section-subtitle{
+      padding-left: 64px;
     }
   }
 
-  .heroImg{
-    width: auto;
+  .press{
+    margin-top: 120px;
+    .grid{
+      grid-template-columns: repeat(5, 1fr);
+      gap: 106px
+    }
   }
+
+
+
+
+
 }
