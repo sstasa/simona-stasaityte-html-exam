@@ -26,6 +26,11 @@ body {
   margin-bottom: 800px;
 }
 
+a {
+  color: inherit;
+  font-weight: 500;
+}
+
 .container {
   padding-left: 32px;
   padding-right: 32px;
@@ -90,6 +95,7 @@ body {
   border: 4px solid #FF3998;
 }
 
+/*HEADER*/
 header {
   position: fixed;
   z-index: 10;
@@ -170,6 +176,12 @@ header {
 .auction-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  overflow: hidden;
+}
+
+.auctionImg {
+  vertical-align: middle; /*be sito atsiranda gap tarp img ir details*/
 }
 
 .auction-item-details {
@@ -200,6 +212,10 @@ header {
   font-size: 20px;
   color: #111111;
   margin-bottom: 12px;
+}
+
+.eth {
+  color: #FF8139;
 }
 
 .nft-id, .auction-time {
