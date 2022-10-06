@@ -82,9 +82,12 @@ a{
 
 /*HEADER*/
 header{
-  position: fixed;
-  z-index: 10;
+  // position: fixed;
+  // z-index: 10; 
+  /*nezinau ar reikia daryti pasileikanti headeri todel uzkomentuoju, nes per pc rezoliucija jis labai platus tai tikriausiai not intended */
+
   width: 100%;
+  background-color: v.$light1;
 }
 
 .header{
@@ -93,11 +96,26 @@ header{
   align-items: center;
   padding-top: 32px;
   padding-bottom: 25px;
-  background-color: v.$light1;
   .burger{
     color: v.$dark4;
     font-size: 30px;
   }
+}
+
+.header-nav{
+  display: none;
+
+}
+.navItem{
+  color: v.$dark2;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 28px;
+  text-decoration: none;
+}
+
+.nav-signUp{
+  color: v.$accent;
 }
 
 /*HERO*/
@@ -226,6 +244,7 @@ header{
 
 .signup{
   margin-top: 92px;
+  overflow: hidden;
 }
 
 .signup-container{
@@ -304,4 +323,41 @@ header{
   margin-top: 54px;
   color: v.$dark4;
   font-size: 20px;
+}
+
+
+/*MEDIA*/
+
+@media screen and (min-width:1000px){
+
+  .container{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  .header{
+    padding: 70px 80px 20px;
+  }
+  .header-nav{
+    display: inline-block;
+  }
+
+  .hero{
+    display: flex;
+  }
+  .hero-text{
+    width: 45%;
+    .section-title{
+      font-size: 96px;
+      line-height: 116px;
+    }
+  }
+
+  .heroImg{
+    width: auto;
+  }
 }
