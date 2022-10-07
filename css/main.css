@@ -322,6 +322,7 @@ header {
 
 /*MEDIA====================================================*/
 @media screen and (min-width: 1000px) {
+  /*GENERAL CHANGES====================*/
   body {
     margin: 0 auto;
     max-width: 1440px;
@@ -334,12 +335,14 @@ header {
   .hiddenMobile {
     display: inline-block;
   }
+  /*HEADER============================================*/
   .burger {
     display: none;
   }
   .header {
     padding: 70px 0px 20px;
   }
+  /*HERO===============================================*/
   .hero {
     display: flex;
     padding-top: 180px;
@@ -361,6 +364,7 @@ header {
     height: auto;
     right: -400px;
   }
+  /*UPSELL==============================================*/
   .upsell {
     margin-left: 80px;
     margin-right: 80px;
@@ -378,6 +382,7 @@ header {
   .upsell .section-subtitle {
     padding-left: 64px;
   }
+  /*PRESS===============================================*/
   .press {
     margin-top: 120px;
   }
@@ -385,6 +390,7 @@ header {
     grid-template-columns: repeat(5, 1fr);
     gap: 106px;
   }
+  /*AUCTION=============================================*/
   .auction {
     margin-top: 120px;
   }
@@ -395,6 +401,7 @@ header {
   .auction .section-subtitle {
     margin-bottom: 56px;
   }
+  /*SIGNUP==============================================*/
   .signup {
     margin-top: 120px;
   }
@@ -423,6 +430,7 @@ header {
     justify-self: center;
     align-self: end;
   }
+  /*FOOTER===============================================*/
   .footer {
     margin-bottom: 71px;
   }
