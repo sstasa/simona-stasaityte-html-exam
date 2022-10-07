@@ -449,6 +449,7 @@ header{
     grid-template-columns: repeat(2, 1fr);
   }
 
+
   .signupImg{
     height: auto;
     justify-self: center;
@@ -482,4 +483,33 @@ header{
     justify-content: space-between;
   }
 
+}
+
+/*TABLET FIXES FOR FUN=======================================*/
+@media screen and (min-width:600px) and (max-width:999px){
+  /*Hero======================================*/
+  .hero-text{
+    width: 70%;
+  }
+
+/*Press======================================*/
+.pressImg{
+  justify-self: center;
+}
+/*Signup=====================================*/
+.signup-container{
+  width: 100%;
+}
+
+.signup-text{
+  width: 60%;
+}
+
+/*Footer=====================================*/
+  .footer-section2{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-section3{
+    text-align: center;
+  }
 }
