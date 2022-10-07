@@ -21,6 +21,10 @@ a{
 .padRight0{
   padding-right: 0;
 }
+.marginRight0{
+  margin-right: 0;
+}
+
 .grid{
   display: grid;
 }
@@ -126,8 +130,8 @@ header{
 }
 .heroImg{
   position: absolute;
-  width: 430px;
-  top:-65px;
+  height: 425px;
+  top:-90px;
   right: -205px;
   z-index: -1;
 }
@@ -326,6 +330,11 @@ header{
 /*MEDIA*/
 
 @media screen and (min-width:1000px){
+
+  body{
+    margin: 0 auto;
+    max-width: 1440px;
+  }
   .container{
     margin-left: 80px;
     margin-right: 80px;
@@ -361,7 +370,7 @@ header{
     }
   }
   .heroImg{
-    width: auto;
+    height: auto;
     right: -400px;
   }
   
