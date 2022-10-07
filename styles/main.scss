@@ -12,6 +12,7 @@ body{
 a{
   color: inherit;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .container{
@@ -77,6 +78,7 @@ a{
   padding: 22px 56px;
   border-radius: 50px;
   border: 4px solid v.$accent;
+  cursor: pointer;
 }
 
 .hr{
@@ -88,7 +90,7 @@ a{
 header{
   // position: fixed;
   // z-index: 10; 
-  /*nezinau ar reikia daryti pasileikanti headeri todel uzkomentuoju, nes per pc rezoliucija jis labai platus tai tikriausiai not intended */
+  /*nezinau ar reikia daryti pasiliekanti headeri todel uzkomentuoju, nes per pc rezoliucija jis labai platus tai tikriausiai not intended kad taip atrodytu*/
 
   width: 100%;
   background-color: v.$light1;
@@ -111,7 +113,6 @@ header{
   font-size: 20px;
   font-weight: 400;
   margin-left: 28px;
-  text-decoration: none;
 }
 
 .nav-signUp{
@@ -179,6 +180,9 @@ header{
 
   .section-subtitle{
     margin-bottom: 40px;
+  }
+  a{
+    text-decoration: underline;
   }
 }
 
@@ -313,7 +317,7 @@ header{
     margin-bottom: 28px;
   }
 
-  p{
+  a{
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;

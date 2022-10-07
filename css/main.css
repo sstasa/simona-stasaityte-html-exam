@@ -26,6 +26,7 @@ body {
 a {
   color: inherit;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .container {
@@ -94,6 +95,7 @@ a {
   padding: 22px 56px;
   border-radius: 50px;
   border: 4px solid #FF3998;
+  cursor: pointer;
 }
 
 .hr {
@@ -103,7 +105,7 @@ a {
 
 /*HEADER=====================================================*/
 header {
-  /*nezinau ar reikia daryti pasileikanti headeri todel uzkomentuoju, nes per pc rezoliucija jis labai platus tai tikriausiai not intended */
+  /*nezinau ar reikia daryti pasiliekanti headeri todel uzkomentuoju, nes per pc rezoliucija jis labai platus tai tikriausiai not intended kad taip atrodytu*/
   width: 100%;
   background-color: #FFFFFF;
 }
@@ -125,7 +127,6 @@ header {
   font-size: 20px;
   font-weight: 400;
   margin-left: 28px;
-  text-decoration: none;
 }
 
 .nav-signUp {
@@ -189,6 +190,9 @@ header {
 }
 .auction .section-subtitle {
   margin-bottom: 40px;
+}
+.auction a {
+  text-decoration: underline;
 }
 
 .auction-grid {
@@ -308,7 +312,7 @@ header {
   text-transform: uppercase;
   margin-bottom: 28px;
 }
-.footer-section2-list p {
+.footer-section2-list a {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 10px;
