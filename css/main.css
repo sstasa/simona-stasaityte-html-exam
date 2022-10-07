@@ -1,3 +1,486 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+}
+
+/*Bendri stiliai===========================================*/
 body {
   font-family: "Inter", sans-serif;
+}
+
+a {
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.padRight0 {
+  padding-right: 0;
+}
+
+.marginRight0 {
+  margin-right: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.relative {
+  position: relative;
+}
+
+.hiddenMobile {
+  display: none;
+}
+
+.accent-title {
+  color: #FF3998;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.section-title, .section-title-light {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: #111111;
+}
+
+.section-title-light {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.section-subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  color: #555555;
+}
+
+.btn {
+  margin-top: 32px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #111111;
+  background-color: transparent;
+  padding: 22px 56px;
+  border-radius: 50px;
+  border: 4px solid #FF3998;
+  cursor: pointer;
+}
+
+.hr {
+  height: 2px;
+  background-color: #EEEEEE;
+}
+
+/*HEADER=====================================================*/
+header {
+  /*nezinau ar reikia daryti pasiliekanti headeri todel uzkomentuoju, nes per pc rezoliucija jis labai platus tai tikriausiai not intended kad taip atrodytu*/
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 25px;
+}
+.header .burger {
+  color: #999999;
+  font-size: 30px;
+}
+
+.navItem {
+  color: #555555;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 28px;
+}
+
+.nav-signUp {
+  color: #FF3998;
+}
+
+/*HERO======================================================*/
+.hero {
+  padding-top: 42px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.hero-text {
+  width: 274px;
+}
+
+.heroImg {
+  position: absolute;
+  height: 425px;
+  top: -90px;
+  right: -205px;
+  z-index: -1;
+}
+
+/*UPSELL=====================================================*/
+.upsell {
+  background-image: linear-gradient(to right, #FF3939, #FF8139);
+  height: 326px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.upsell .section-title, .upsell .section-title-light {
+  padding-top: 122px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.upsell .section-subtitle {
+  color: #111111;
+}
+
+/*PRESS=====================================================*/
+.press {
+  margin-top: 64px;
+}
+.press .grid {
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 75px;
+       column-gap: 75px;
+  row-gap: 29px;
+}
+
+.pressImg {
+  max-width: 100%;
+  align-self: stretch;
+}
+
+/*AUCTION=====================================================*/
+.auction .section-title-light {
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+.auction .section-subtitle {
+  margin-bottom: 40px;
+}
+.auction a {
+  text-decoration: underline;
+}
+
+.auction-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  overflow: hidden;
+}
+
+.auctionImg {
+  vertical-align: middle; /*be sito atsiranda gap tarp img ir details*/
+}
+
+.auction-item-details {
+  background-color: #EEEEEE;
+  border-radius: 0px 0px 16px 16px;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.topbid, .nft-price, .auction-time {
+  justify-self: end;
+}
+
+.gloop, .topbid {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #FF8139;
+  margin-bottom: 12px;
+}
+
+.topbid {
+  color: #777777;
+}
+
+.nft-name, .nft-price {
+  font-weight: 500;
+  font-size: 20px;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.eth {
+  color: #FF8139;
+}
+
+.nft-id, .auction-time {
+  color: #777777;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*SIGNUP=================================================*/
+.signup {
+  margin-top: 92px;
+  overflow: hidden;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  overflow: hidden;
+  width: 455px;
+  height: 630px;
+}
+.signup-container .accent-title {
+  margin-top: 64px;
+}
+.signup-container .section-title, .signup-container .section-title-light {
+  margin-top: 24px;
+}
+.signup-container .btn {
+  margin-bottom: 66px;
+}
+
+.signupImg {
+  height: 467px;
+  align-self: flex-end;
+}
+
+/*FOOTER=================================================*/
+.footer {
+  margin-bottom: 105px;
+}
+
+.footer-section1 {
+  margin-top: 64px;
+}
+.footer-section1 .section-subtitle {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.footerIcon {
+  font-size: 18px;
+  margin-right: 16px;
+  color: #999999;
+}
+
+.footer-section2 {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+
+.footer-section2-list {
+  display: flex;
+  flex-direction: column;
+  color: #555555;
+}
+.footer-section2-list h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+.footer-section2-list a {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.footer-section3 {
+  margin-top: 54px;
+  color: #999999;
+  font-size: 20px;
+}
+
+/*MEDIA====================================================*/
+@media screen and (min-width: 1000px) {
+  /*GENERAL CHANGES====================*/
+  body {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .container {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 0;
+  }
+  .hiddenMobile {
+    display: inline-block;
+  }
+  /*HEADER============================================*/
+  .burger {
+    display: none;
+  }
+  .header {
+    padding: 70px 0px 20px;
+  }
+  /*HERO===============================================*/
+  .hero {
+    display: flex;
+    padding-top: 180px;
+    padding-bottom: 0px;
+  }
+  .hero-text {
+    width: 58%;
+  }
+  .hero-text .section-title, .hero-text .section-title-light {
+    font-size: 96px;
+    line-height: 116px;
+    margin-bottom: 32px;
+  }
+  .hero-text .btn {
+    margin-top: 41px;
+    margin-bottom: 200px;
+  }
+  .heroImg {
+    height: auto;
+    right: -400px;
+  }
+  /*UPSELL==============================================*/
+  .upsell {
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 16px;
+  }
+  .upsell .container {
+    margin: 0;
+  }
+  .upsell .section-title-light {
+    margin: 0;
+    padding-left: 64px;
+    padding-top: 154px;
+    padding-bottom: 24px;
+  }
+  .upsell .section-subtitle {
+    padding-left: 64px;
+  }
+  /*PRESS===============================================*/
+  .press {
+    margin-top: 120px;
+  }
+  .press .grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 106px;
+  }
+  /*AUCTION=============================================*/
+  .auction {
+    margin-top: 120px;
+  }
+  .auction .section-title-light {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  .auction .section-subtitle {
+    margin-bottom: 56px;
+  }
+  /*SIGNUP==============================================*/
+  .signup {
+    margin-top: 120px;
+  }
+  .signup .accent-title {
+    margin-top: 120px;
+  }
+  .signup .section-title, .signup .section-title-light {
+    font-size: 56px;
+    line-height: 68px;
+  }
+  .signup .section-subtitle {
+    max-width: 537px;
+  }
+  .signup .btn {
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+  .signup-container {
+    width: auto;
+    height: 554px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .signupImg {
+    height: auto;
+    justify-self: center;
+    align-self: end;
+  }
+  /*FOOTER===============================================*/
+  .footer {
+    margin-bottom: 71px;
+  }
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 120px;
+  }
+  .footer-section1 {
+    margin-top: 0;
+  }
+  .footer-section2 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 101px;
+    margin-right: 30px;
+    margin-top: 0;
+  }
+  .footer-section3 {
+    margin-top: 120px;
+    grid-column: 1/span 2;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*TABLET FIXES FOR FUN=======================================*/
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  /*Hero======================================*/
+  .hero-text {
+    width: 70%;
+  }
+  /*Press======================================*/
+  .pressImg {
+    justify-self: center;
+  }
+  /*Signup=====================================*/
+  .signup-container {
+    width: 100%;
+  }
+  .signup-text {
+    width: 60%;
+  }
+  /*Footer=====================================*/
+  .footer-section2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-section3 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
